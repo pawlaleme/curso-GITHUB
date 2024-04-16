@@ -1,0 +1,88 @@
+
+Desafios
+Crie uma conta no GitHub
+Crie um repositório para um projeto pessoal.
+Faça a instalação do Git
+
+Crie um repositório localmente para o seu projeto pessoal
+// git init
+
+Adicione alguns arquivos no seu repositório local
+// git add .
+
+Faça o commit das alterações
+// git commit -m "mensagem de commit"
+
+Configure a identidade do autor do commit.
+// git -config --global user.email "seuemailaqui@example.com"
+// git config --global user.name "seu nome aqui"
+
+Crie a branch Main
+// git branch -M main
+*O comando git branch -m é usado para criar uma nova ramificação no repositório Git atual. Neste caso, criamos a branch padrão main, que representa a versão principal do código.*
+
+Realize a conexão do seu repositório local com o remoto
+// git remote add origin https://github.com/seunomedeusuario/seu-repositorio.git
+*Caso seja necessário, realize a configuração do protocolo SSH através da geração de chave, você pode acompanhar os passos em vídeo na atividade Sincronizando repositórios*
+
+Envie as alterações no repositório local para o remoto
+// git push -u origin main
+
+Utilize o comando git status
+*O comando git status é uma ferramenta essencial para gerenciar alterações no controle de versão Git. Ele fornece uma visão geral do estado atual do repositório, indicando quais arquivos foram modificados, adicionados ou excluídos desde o último commit. Essa informação é crucial para compreender o progresso do desenvolvimento e tomar decisões de gerenciamento de alterações.*
+
+*O comando git remote add origin url-do-repositorio-no-github é o utilizado para conectar seu repositório local ao repositório remoto no Github.*
+
+-----------------------------------------------------------------------------
+
+M: *A letra M representa o estado Modified, do português modificado. Isso significa que o arquivo já existia no repositório, mas que recebeu alguma modificação que ainda não foi registrada no Git.*
+
+U: *A letra U representa o estado Untracked, do português não rastreado. Isso significa que o arquivo ainda não existia no repositório e que ainda não teve seu registro (commit) feito no Git.*
+
+Qual comando você deve usar para baixar os commits enviados pelas outras pessoas do time?
+**O comando git pull origin main é utilizado para baixar os commits do repositório remoto para o repositório local.**
+
+
+Desafios:
+
+Crie um novo repositório remoto no Github e insira um arquivo.
+**NEW REPOSITORY | ADD FILE**
+
+Faça um clone do seu repositório remoto para o local.
+*git clone <url-do-seu-repositorio>.*
+
+Faça uma nova modificação no repositório remoto.
+**Edit this file**
+
+Atualize seu repositório local a partir do Remoto.
+**git pull origin main**
+
+Utilize o comando git remote -v no terminal.
+**git remote -v para listar as entradas remotas configuradas e suas URLs.**
+
+*O comando é usado para listar todas as entradas remotas configuradas no repositório Git atual. Cada entrada remota é representada por um nome e uma URL. O nome da entrada remota é usado para referenciar outros comandos git, como o git fetch e git push.
+
+Por exemplo, se o seu repositório Git tiver uma entrada remota chamada origin que aponta para o URL https://github.com/meu-usuário/meu-repositório.git, o comando git remote -v exibirá o seguinte:
+
+origin  https://github.com/meu-usuário/meu-repositório.git (fetch)
+origin  https://github.com/meu-usuário/meu-repositório.git (push)*
+
+ Confira as mudanças nos arquivos.
+ **git status para ver arquivos modificados**
+
+---------------------------------------------------------------------------------
+Você está trabalhando em um projeto de desenvolvimento de software em equipe chamado "TechPro". Todas as pessoas do time estão usando o Git para controle de versão. Durante uma colaboração, ocorreu um conflito em um arquivo chamado main.js.
+
+Escolha a alternativa que indica a maneira de resolver tal conflito:
+ **Editar o arquivo e realizar um novo commit.**
+
+
+A resolução de conflitos no Git envolve a edição manual do arquivo conflitante para resolver as diferenças entre as versões conflitantes. Depois de editar e resolver o conflito, você deve usar git add para adicionar as mudanças resolvidas e, em seguida, executar git commit para confirmar as alterações. Isso registra a resolução do conflito no histórico de commits do repositório.**
+
+
+----------------------------------------------------------------------------
+Você está trabalhando em um projeto de desenvolvimento de software chamado "TechCode". Observou-se que o histórico de commits do repositório possui um commit indesejado que precisa ser removido.
+
+Qual o comando correto para realizar essa tarefa?
+**git reset --hard <id_do_commit_anterior>**
+*O comando git reset permite redefinir a posição da branch atual para um commit anterior, removendo os commits posteriores do histórico.*
